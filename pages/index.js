@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 
 import { Client } from '../utils/prismicHelpers'
-import SliceZone from '../components/slices/sliceZone'
+import SliceZone from '../components/slices/SliceZone'
 
 const HomePage = ({ doc, menu }) => {
   if (doc && doc.data) {
