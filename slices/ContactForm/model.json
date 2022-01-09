@@ -1,0 +1,32 @@
+{
+  "id": "contact_form",
+  "type": "SharedSlice",
+  "name": "ContactForm",
+  "description": "ContactForm",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ContactForm",
+      "primary": {
+        "name": {
+          "config": {
+            "label": "Name",
+            "placeholder": "Enter Full Name"
+          },
+          "type": "Text"
+        },
+        "email": {
+          "config": {
+            "label": "Email Address",
+            "placeholder": "Enter Email"
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

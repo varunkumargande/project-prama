@@ -1,0 +1,27 @@
+{
+  "id": "rich_text_module",
+  "type": "SharedSlice",
+  "name": "RichTextModule",
+  "description": "RichTextModule",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "RichTextModule",
+      "primary": {},
+      "items": {
+        "richtext": {
+          "config": {
+            "label": "richtext",
+            "placeholder": "Enter Description",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3"
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}

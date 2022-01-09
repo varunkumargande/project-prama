@@ -19,6 +19,14 @@ export const linkResolver = (doc) => {
   return '/'
 }
 
+// Additional helper function for Next/Link component
+export const hrefResolver = (doc) => {
+  if (doc.type === 'page') {
+    return '/[uid]'
+  }
+  return '/'
+}
+
 // -- Route Resolver rules
 // Manages the url links to internal Prismic documents two levels deep (optionals)
 export const Router = {

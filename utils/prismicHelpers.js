@@ -5,6 +5,7 @@ import {
   apiEndpoint,
   accessToken,
   linkResolver,
+  hrefResolver,
   Router
 } from '../prismicConfiguration'
 
@@ -17,6 +18,13 @@ export const customLink = (type, element, content, children, index) => (
     <a>{content}</a>
   </Link>
 )
+
+// Helper function to convert Prismic Rich Text links to Next/Link components
+// export const customLink = (type, element, content, children, index) => (
+//   <Link key={element.data.id} href={hrefResolver(element.data)} as={linkResolver(element.data)}>
+//     <a>{content}</a>
+//   </Link>
+// )
 
 // -- @prismicio/client initialisation
 // Initialises the Prismic Client that's used for querying the API and passes it any query options.
