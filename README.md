@@ -1,3 +1,33 @@
+Tools Used
+□ NextJS as framework
+○ Vercel for hosting
+○ Prismic as CMS
+○ Github as repository ( https://github.com/varunkumargande/project-prama )
+○ AWS Lamda function for simple contact form
+
+Please design, develop, and host a static site consisting of 3 pages - a home page, a contact us page, and a
+privacy policy page. The pages will be composed of 3 reusable modules:
+•
+○ A hero module consisting of an image background with text overlaid on top
+A rich text module containing heading text (H1, H2, etc) and paragraphs of body copy. The rich text module may
+appear multiple times on a page.
+○
+A form which will collect name and email address. The data can be saved using a form-as-a-service API
+integration, serverless functions, etc.
+○
+The content (text and images) must be editable from within a headless CMS. Either GraphQL or REST APIs may be
+used to retrieve content from the CMS.
+•
+There are no right/wrong ways to implement this. The UI/design can be minimal using any frameworks you are
+familiar with or custom code as desired.
+•
+• Use only free plans or tiers of any services used.
+Your solution should be provided as a marked up file and delivered in a Zip file. Please do not use a public Github
+link.
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
