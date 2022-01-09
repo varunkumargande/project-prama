@@ -1,6 +1,5 @@
 import { Client } from './prismicHelpers'
 
-// ~/utils/queries.js
 async function fetchDocs(page = 1, routes = []) {
   const response = await Client().query('', { pageSize: 100, lang: '*', page });
   const allRoutes = routes.concat(response.results);
@@ -17,7 +16,6 @@ export const queryRepeatableDocuments = async (filter) => {
   const allRoutes = await fetchDocs()
   return allRoutes.filter(filter)
 }
-
 
 export const homePageQuery = async () => {
   const allRoutes = await fetchDocs()

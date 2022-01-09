@@ -5,23 +5,23 @@ import Link from 'next/link'
 import { Client } from '../utils/prismicHelpers'
 import SliceZone from '../components/slices/sliceZone'
 
-const HomePage = ({ doc, menu }) => {
+const PrivacyPolicy = ({ doc, menu }) => {
   if (doc && doc.data) {
     return (
-      <div className='homepage'>
+      <div className='privacypolicy text-left'>
         <ul>
+          <li>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </li>
           <li>
             <Link href="/contact">
               <a>Contact Us</a>
             </Link>
           </li>
-          <li>
-            <Link href="/privacy-policy">
-              <a>Privacy Policy</a>
-            </Link>
-          </li>
         </ul>
-        <SliceZone sliceZone={doc.data.slices} />
+        <SliceZone sliceZone={doc.data.body} />
       </div>
     )
   }
@@ -36,7 +36,7 @@ export async function getStaticProps({ preview = null, previewData = {} }) {
 
   const client = Client()
 
-  const doc = await client.getSingle('home-page', ref ? { ref } : null) || {}
+  const doc = await client.getSingle('privacy_policy', ref ? { ref } : null) || {}
 
   return {
     props: {
@@ -46,4 +46,4 @@ export async function getStaticProps({ preview = null, previewData = {} }) {
   }
 }
 
-export default HomePage
+export default PrivacyPolicy

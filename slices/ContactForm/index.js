@@ -5,8 +5,7 @@ import Form from 'react-bootstrap/Form'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ContactForm = ({ slice }) => (
-  <section>
-    {console.log(slice)}
+  <section className={`col-12`}>
     <Form className={`text-left`}>
       <Form.Group className="mb-3" controlId="formBasicName">
         <Form.Label>Name</Form.Label>
@@ -27,7 +26,6 @@ const ContactForm = ({ slice }) => (
         section {
           max-width: 600px;
           margin: 4em auto;
-          text-align: center;
         }
         .title {
           color: #8592e0;

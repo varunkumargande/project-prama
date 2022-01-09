@@ -1,7 +1,5 @@
-// -- Prismic Repo Name
-export const repoName = 'project-prama'
-
 // -- Prismic API endpoint
+export const repoName = 'project-prama'
 // Determines which repository to query and fetch data from
 // Configure your site's access point here
 export const apiEndpoint = `https://${repoName}.cdn.prismic.io/api/v2`
@@ -26,14 +24,3 @@ export const hrefResolver = (doc) => {
   }
   return '/'
 }
-
-// -- Route Resolver rules
-// Manages the url links to internal Prismic documents two levels deep (optionals)
-export const Router = {
-  routes: [
-    {
-      "type":"page",
-      "path":"/:uid"
-    },
-  ]
-};
