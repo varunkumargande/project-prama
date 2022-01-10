@@ -1,6 +1,6 @@
 Tools Used
 □ NextJS as framework
-○ Vercel for hosting
+○ Vercel for hosting (https://project-prama-varunkumargande.vercel.app/)
 ○ Prismic as CMS
 ○ Github as repository ( https://github.com/varunkumargande/project-prama )
 ○ AWS Lamda function for simple contact form
